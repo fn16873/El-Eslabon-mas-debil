@@ -1,1 +1,1 @@
-# Este trabajo es una tarea de un técnico en ciberseguridad 
+# Tarea de un técnico en ciberseguridad 
