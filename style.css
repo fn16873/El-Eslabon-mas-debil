@@ -49,8 +49,29 @@ header h1 {
 /* Navegación */
 nav {
     text-align: center;
-    padding: 20px;
     margin-bottom: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 30px;
+}
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #00d4ff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px rgba(0, 212, 255, 0.5);
+}
+
+nav ul li a:hover {
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
 }
 
 /* Contenedor principal */
