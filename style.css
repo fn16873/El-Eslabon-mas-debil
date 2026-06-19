@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0f1425 100%);
+    background-attachment: fixed;
+    color: #e0e0e0;
+    font-family: 'Courier New', monospace;
+    line-height: 1.8;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Efecto de fondo animado */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(0, 255, 100, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(0, 150, 255, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 2px solid #00ff64;
+    box-shadow: 0 0 20px rgba(0, 255, 100, 0.3);
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #00ff64;
+    text-shadow: 0 0 10px #00ff64, 0 0 20px rgba(0, 255, 100, 0.5);
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+/* Navegación */
+nav {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+/* Contenedor principal */
+.tacticas-ing\.social,
+.identificadores-engaño {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Títulos principales H1 */
+h1 {
+    text-align: center;
+    color: #00ff64;
+    font-size: 2.5em;
+    margin: 40px 0 30px 0;
+    text-shadow: 0 0 10px #00ff64;
+    letter-spacing: 2px;
+}
+
+/* Títulos secundarios */
+h2 {
+    color: #00d4ff;
+    font-size: 1.8em;
+    margin: 25px 0 15px 0;
+    text-shadow: 0 0 5px #00d4ff;
+}
+
+h3 {
+    color: #64ff00;
+    font-size: 1.4em;
+    margin: 20px 0 10px 0;
+    text-shadow: 0 0 5px #64ff00;
+}
+
+h4 {
+    color: #00ffff;
+    font-size: 1.1em;
+    margin: 15px 0 8px 0;
+}
+
+/* Secciones con bordes y blur */
+section {
+    background: rgba(15, 20, 40, 0.6);
+    border: 2px solid #00ff64;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 25px 0;
+    backdrop-filter: blur(10px);
+    box-shadow: 
+        0 0 20px rgba(0, 255, 100, 0.2),
+        inset 0 0 20px rgba(0, 255, 100, 0.05);
+    transition: all 0.3s ease;
+}
+
+section:hover {
+    border-color: #00d4ff;
+    box-shadow: 
+        0 0 30px rgba(0, 212, 255, 0.3),
+        inset 0 0 20px rgba(0, 212, 255, 0.1);
+}
+
+section.phishing {
+    border-color: #ff0080;
+    box-shadow: 
+        0 0 20px rgba(255, 0, 128, 0.2),
+        inset 0 0 20px rgba(255, 0, 128, 0.05);
+}
+
+section.phishing:hover {
+    border-color: #ff3399;
+    box-shadow: 
+        0 0 30px rgba(255, 51, 153, 0.3),
+        inset 0 0 20px rgba(255, 51, 153, 0.1);
+}
+
+section.tailgating {
+    border-color: #ff9500;
+    box-shadow: 
+        0 0 20px rgba(255, 149, 0, 0.2),
+        inset 0 0 20px rgba(255, 149, 0, 0.05);
+}
+
+section.tailgating:hover {
+    border-color: #ffb84d;
+    box-shadow: 
+        0 0 30px rgba(255, 184, 77, 0.3),
+        inset 0 0 20px rgba(255, 184, 77, 0.1);
+}
+
+section.shoulder-surfing {
+    border-color: #00ffff;
+    box-shadow: 
+        0 0 20px rgba(0, 255, 255, 0.2),
+        inset 0 0 20px rgba(0, 255, 255, 0.05);
+}
+
+section.shoulder-surfing:hover {
+    border-color: #00ffff;
+    box-shadow: 
+        0 0 30px rgba(0, 255, 255, 0.4),
+        inset 0 0 20px rgba(0, 255, 255, 0.15);
+}
+
+section.introduccion {
+    border-color: #00d4ff;
+    box-shadow: 
+        0 0 20px rgba(0, 212, 255, 0.2),
+        inset 0 0 20px rgba(0, 212, 255, 0.05);
+}
+
+/* Articles */
+article {
+    background: rgba(10, 14, 39, 0.4);
+    padding: 15px;
+    border-left: 4px solid #00ff64;
+    border-radius: 5px;
+}
+
+/* Párrafos */
+p {
+    margin: 12px 0;
+    color: #d0d0d0;
+    text-align: justify;
+}
+
+/* Líneas horizontales */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #00ff64, transparent);
+    margin: 30px 0;
+    box-shadow: 0 0 10px rgba(0, 255, 100, 0.4);
+}
+
+/* Enlaces */
+a {
+    color: #00d4ff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px rgba(0, 212, 255, 0.5);
+}
+
+a:hover {
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(10, 14, 39, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #00ff64, #00d4ff);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #00ffff, #64ff00);
+}
+
+/* Centrar la imagen */
+img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 255, 100, 0.3);
+    margin: 20px auto;
+    display: block;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    h2 {
+        font-size: 1.4em;
+    }
+    
+    section {
+        padding: 15px;
+    }
+}
